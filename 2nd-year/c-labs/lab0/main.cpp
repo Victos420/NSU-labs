@@ -5,16 +5,17 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-
     ifstream input(argv[1]);
     ofstream output(argv[2]);
     string string1;
     string basicstr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     map <string, int> wordMap;
-    getline(input, string1);
     int pos = 0, prevPos = 0;
     int wordCount = 0;
     while(true){
+        if (!getline(input, string1)){
+            break;
+        }
         pos = string1.find_first_not_of(basicstr, prevPos);
         if (pos == -1){
             if (prevPos != size(string1)){
