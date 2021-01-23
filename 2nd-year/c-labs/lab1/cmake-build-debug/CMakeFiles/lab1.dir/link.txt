@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/lab1.dir/main.cpp.o CMakeFiles/lab1.dir/tritset.cpp.o CMakeFiles/lab1.dir/tests.cpp.o  -o lab1.exe -Wl,--out-implib,liblab1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a 
